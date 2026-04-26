@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitris Tsekouras - Ergasia A2 Lykeiou - Pliroforikis Mousiko Athinas</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212; /* Σκούρο φόντο */
+            color: #e0e0e0; /* Ανοιχτό γκρι κείμενο */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            border-top: 5px solid #e50000; /* Άλλαξα τη γραμμή σε κόκκινο (Sith) */
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            text-align: center;
+            color: #e50000; /* Κόκκινο του φωτόσπαθου για τον υπότιτλο */
+            font-weight: normal;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .media-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(229, 0, 0, 0.3); /* Κόκκινη σκιά γύρω από την εικόνα */
+        }
+        .description {
+            font-size: 1.1em;
+            padding: 20px;
+            background-color: #2a2a2a;
+            border-left: 5px solid #ffaa00; /* Πορτοκαλί-κίτρινη γραμμή */
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        .highlight-bold {
+            color: #ffaa00;
+            font-weight: bold;
+        }
+        .highlight-italic {
+            color: #00e5ff;
+            font-style: italic;
+        }
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        a.movie-link {
+            display: inline-block;
+            background-color: #e50000;
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s; /* Εφέ κίνησης */
+        }
+        a.movie-link:hover {
+            background-color: #ff3333;
+            transform: scale(1.05); /* Μεγαλώνει λίγο όταν περνάει το ποντίκι */
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Αναλογία 16:9 για το βίντεο */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Star Wars</h1>
+        <h2>Επεισόδιο III - Η Εκδίκηση των Σιθ</h2>
+
+        <div class="media-container">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/93/Star_Wars_Episode_III_Revenge_of_the_Sith_poster.jpg" alt="Αφίσα της ταινίας Star Wars: Επεισόδιο III - Η Εκδίκηση των Σιθ" width="350">
+        </div>
+
+        <p class="description">
+            Ο λόγος που επιλέγω αυτή την ταινία είναι επειδή αποτελεί την πιο σκοτεινή και συναισθηματική στιγμή ολόκληρου του franchise. Καταφέρνει να συνδυάσει <span class="highlight-bold">επικές μάχες με φωτόσπαθα</span> με τη δραματική πτώση του Anakin Skywalker. Σκηνές όπως η τελική αναμέτρηση στον πλανήτη <span class="highlight-italic">Mustafar</span> δεν είναι απλώς δράση, αλλά μια συγκλονιστική κινηματογραφική εμπειρία. Η χρήση των <b>οπτικών εφέ</b> και η <i>επική μουσική</i> του John Williams κάνουν αυτό το έργο ένα πραγματικό αριστούργημα επιστημονικής φαντασίας!
+        </p>
+
+        <div class="button-container">
+            <a href="https://www.imdb.com/title/tt0121766/" target="_blank" class="movie-link">Δείτε τη σελίδα στο IMDb</a>
+        </div>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5UnjrG_N8hU?si=74EenTPIp_P8U7bS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
